@@ -1,7 +1,11 @@
 package main
 
-import "fmt"
+import (
+	"e-comerce.com/m/internal/routers"
+)
 
 func main() {
-	fmt.Println("Start")
+  r := routers.NewRouter();
+
+  r.Run(":8002")
 }
